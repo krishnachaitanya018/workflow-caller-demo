@@ -1,0 +1,11 @@
+name: Call External Workflow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  call_custom_workflow:
+    uses: krishnachaitanya018/custom-actions-demo/.github/workflows/main-pipeline.yml@main
+    with:
+      environment: "dev"
